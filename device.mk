@@ -143,7 +143,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer3-V3-ndk.vendor \
     vendor.qti.hardware.display.aiqe-V2-ndk.vendor  \
     vendor.qti.hardware.display.config-V12-ndk.vendor  \
-    vendor.qti.hardware.display.composer3-V1-ndk.vendor 
+    vendor.qti.hardware.display.composer3-V1-ndk.vendor
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -209,6 +209,7 @@ PRODUCT_PACKAGES += \
     ueventd.qcom.rc
 
 PRODUCT_PACKAGES += \
+    init.mi_perf.rc \
     init.qcom.factory.rc \
     init.qcom.rc \
     init.recovery.qcom.rc \
