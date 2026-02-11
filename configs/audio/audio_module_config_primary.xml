@@ -58,7 +58,8 @@ SPDX-License-Identifier: BSD-3-Clause-Clear
             <profile samplingRates="8000 16000 32000 48000" channelLayouts="LAYOUT_MONO LAYOUT_STEREO" formatType="PCM" pcmType="INT_16_BIT" />
         </mixPort>
         <mixPort name="voip_playback" role="source" flags="VOIP_RX">
-            <profile samplingRates="8000 16000 32000 48000" channelLayouts="LAYOUT_STEREO" formatType="PCM" pcmType="INT_16_BIT" />
+            <profile samplingRates="8000 16000 32000 48000" channelLayouts="LAYOUT_MONO LAYOUT_STEREO" formatType="PCM" pcmType="INT_16_BIT" />
+            <profile samplingRates="8000 16000 32000 48000" channelLayouts="LAYOUT_MONO LAYOUT_STEREO" formatType="PCM" pcmType="INT_24_BIT" />
         </mixPort>
         <mixPort name="in_call_music" role="source" flags="INCALL_MUSIC">
             <profile samplingRates="8000 16000 32000 48000" channelLayouts="LAYOUT_MONO LAYOUT_STEREO" formatType="PCM" pcmType="INT_16_BIT" />
@@ -84,6 +85,8 @@ SPDX-License-Identifier: BSD-3-Clause-Clear
         <mixPort name="voip_record" role="sink" flags="VOIP_TX">
             <profile samplingRates="8000 16000 32000 48000" channelLayouts="LAYOUT_MONO"
                 formatType="PCM" pcmType="INT_16_BIT" />
+            <profile samplingRates="8000 16000 32000 48000" channelLayouts="LAYOUT_MONO"
+                formatType="PCM" pcmType="INT_24_BIT" />
         </mixPort>
         <mixPort name="usb_surround_sound_input" role="sink">
             <profile samplingRates="8000 11025 12000 16000 22050 24000 32000 44100 48000 88200 96000 176400 192000" channelLayouts="LAYOUT_MONO LAYOUT_STEREO LAYOUT_FRONT_BACK LAYOUT_5POINT1" channelMasks="INDEX_MASK_3 INDEX_MASK_4 INDEX_MASK_6 INDEX_MASK_8" formatType="PCM" pcmType="INT_16_BIT" />
