@@ -57,7 +57,11 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <!-- version section contains a “version” tag in the form “major.minor” e.g version=”1.0” -->
 
     <!-- Global configuration Decalaration -->
-    <globalConfiguration speaker_drc_enabled="true" call_screen_mode_supported="true"/>
+    <globalConfiguration speaker_drc_enabled="true" call_screen_mode_supported="true"
+                       surround_sound_supported="true" hdmi_audio_caps="true"
+                       supports_audio_source_capture="true" supports_hotword="true"
+                       supports_mic_near_ultrasound="true" supports_usbaudio="true"
+                       supports_setting_primary_output_latency="true"/>
 
 
     <!-- Modules section:

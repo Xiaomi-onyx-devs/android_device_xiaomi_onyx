@@ -107,7 +107,11 @@
 <MediaCodecs>
     <Include href="media_codecs_c2_audio.xml" />
     <Settings>
-        <Setting name="max-video-encoder-input-buffers" value="11" />
+        <Setting name="max-video-encoder-input-buffers" value="16" />
+        <Setting name="video-decoder-max-resolution" value="7680x4320" />
+        <Setting name="video-encoder-max-resolution" value="7680x4320" />
+        <Setting name="video-decoder-max-bitrate" value="200000000" />
+        <Setting name="video-encoder-max-bitrate" value="200000000" />
     </Settings>
     <Decoders>
         <!-- C2 decoders -->
@@ -118,7 +122,7 @@
             <Limit name="block-size" value="16x16" />
             <Limit name="block-count" range="36-129600" />
             <Limit name="blocks-per-second" range="36-3888000" />
-            <Limit name="bitrate" range="1-160000000" />
+            <Limit name="bitrate" range="1-200000000" />
             <Limit name="frame-rate" range="1-480" />
             <Limit name="concurrent-instances" max="16" />
             <Feature name="adaptive-playback" />
@@ -173,7 +177,7 @@
             <Limit name="block-size" value="16x16" />
             <Limit name="block-count" range="36-129600" />
             <Limit name="blocks-per-second" min="36" max="3888000" />
-            <Limit name="bitrate" range="1-160000000" />
+            <Limit name="bitrate" range="1-200000000" />
             <Limit name="frame-rate" range="1-480" />
             <Feature name="adaptive-playback" />
             <Feature name="dynamic-color-aspects" />
@@ -332,7 +336,7 @@
             <Limit name="block-size" value="16x16" />
             <Limit name="blocks-per-second" min="64" max="3110400" />
             <Limit name="block-count" range="64-129600" />
-            <Limit name="bitrate" range="1-160000000" />
+            <Limit name="bitrate" range="1-200000000" />
             <Limit name="frame-rate" range="1-480" />
             <Limit name="complexity" range="0-100"  default="100" />
             <Limit name="concurrent-instances" max="16" />
@@ -353,7 +357,7 @@
             <Limit name="block-size" value="16x16" />
             <Limit name="blocks-per-second" min="64" max="3110400" />
             <Limit name="block-count" range="36-129600" />
-            <Limit name="bitrate" range="1-160000000" />
+            <Limit name="bitrate" range="1-200000000" />
             <Limit name="frame-rate" range="1-480" />
             <Limit name="complexity" range="0-100"  default="100" />
             <Limit name="concurrent-instances" max="16" />
@@ -374,7 +378,7 @@
             <Limit name="block-size" value="16x16" />
             <Limit name="blocks-per-second" min="64" max="1944000" />
             <Limit name="block-count" range="36-34816" />
-            <Limit name="bitrate" range="1-160000000" />
+            <Limit name="bitrate" range="1-200000000" />
             <Limit name="frame-rate" range="1-480" />
             <Limit name="complexity" range="0-100"  default="100" />
             <Limit name="concurrent-instances" max="16" />
@@ -392,7 +396,7 @@
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
             <Limit name="blocks-per-second" min="64" max="3916800" />
-            <Limit name="bitrate" range="1-160000000" />
+            <Limit name="bitrate" range="1-200000000" />
             <Limit name="frame-rate" range="1-480" />
             <Limit name="concurrent-instances" max="16" />
             <Limit name="quality" range="0-100" default="80" />
@@ -405,7 +409,7 @@
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
             <Limit name="blocks-per-second" min="64" max="3916800" />
-            <Limit name="bitrate" range="1-160000000" />
+            <Limit name="bitrate" range="1-200000000" />
             <Limit name="frame-rate" range="1-20" />
             <Limit name="concurrent-instances" max="16" />
             <Limit name="quality" range="0-100" default="80" />
