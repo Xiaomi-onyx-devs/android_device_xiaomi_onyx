@@ -3,6 +3,7 @@
 /dev/socket/audio_holder_socket_0 u:object_r:audio_socket:s0
 /dev/socket/audio_us_socket_0 u:object_r:audio_socket:s0
 /dev/socket/audio_us_socket_1 u:object_r:audio_socket:s0
+/mnt/vendor/persist/audio(/.*)? u:object_r:vendor_persist_audio_file:s0
 
 # Battery
 /(vendor|system/vendor)/bin/batterysecret u:object_r:batterysecret_exec:s0
