@@ -1,8 +1,1 @@
-# Audio
-allow system_server audio_socket:sock_file rw_file_perms;
-allow system_server hal_audio_default:unix_stream_socket connectto;
-get_prop(system_server, vendor_audio_cloud_ctrl_mi_prop);
-r_dir_file(system_server, vendor_persist_audio_file);
-
-# Battery
 allow system_server vendor_sysfs_battery_supply:file r_file_perms;
