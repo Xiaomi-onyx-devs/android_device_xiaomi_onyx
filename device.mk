@@ -78,7 +78,6 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.core-V2-ndk.vendor \
     android.hardware.audio.core.sounddose-V1-ndk.vendor \
     libalsautilsv2.vendor \
-    libaudioaidlcommon.vendor \
     libaudioutils_shim \
     libmediautils_vendor.vendor \
     libmemunreachable.vendor
@@ -86,7 +85,7 @@ PRODUCT_PACKAGES += \
 AUDIO_HAL_DIR := hardware/qcom-caf/sm8750/audio/primary-hal
 
 PRODUCT_COPY_FILES += \
-    $(AUDIO_HAL_DIR)/configs/sun/audio_effects_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_tuna/audio_effects_config.xml \
+    $(LOCAL_PATH)/configs/audio/audio_effects_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_tuna/audio_effects_config.xml \
     $(LOCAL_PATH)/configs/audio/audio_module_config_primary.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_module_config_primary.xml \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_tuna/audio_policy_configuration.xml
 
@@ -531,4 +530,7 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, vendor/xiaomi/onyx/onyx-vendor.mk)
 
 # Dolby
+PRODUCT_PACKAGES += \
+    LunarisDolby
+
 $(call inherit-product, hardware/dolby/dolby.mk)
